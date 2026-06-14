@@ -1,6 +1,6 @@
 # Windows Management MCP Server
 
-<!-- mcp-name: io.github.AhmedLaminou/windows-mcp-server -->
+<!-- mcp-name: io.github.ahmedlaminou/windows-mcp-server -->
 
 Windows Management MCP Server is a Python-based Model Context Protocol server for local Windows diagnostics, task management, cleanup, hardware inspection, security checks, and administrative workflows.
 

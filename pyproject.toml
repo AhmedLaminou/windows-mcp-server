@@ -9,7 +9,7 @@ description = "Advanced Windows management, diagnostics, security, and optimizat
 readme = "README.md"
 license = { text = "MIT" }
 authors = [
-    { name = "Ahmed", email = "ahmed@example.com" }
+    { name = "AhmedLaminou", email = "ahmedlaminouamadou@gmail.com" }
 ]
 requires-python = ">=3.10"
 dependencies = [

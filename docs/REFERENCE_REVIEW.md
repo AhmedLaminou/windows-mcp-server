@@ -24,12 +24,12 @@ The MCP Registry documentation currently treats the registry as metadata only; t
 Useful patterns applied here:
 
 - `server.json` uses the current registry schema URL.
-- `server.json` uses a registry-style name: `io.github.AhmedLaminou/windows-mcp-server`.
+- `server.json` uses a registry-style name: `io.github.ahmedlaminou/windows-mcp-server`.
 - `server.json` declares a PyPI package entry with stdio transport.
 - `README.md` contains the PyPI package verification marker:
 
 ```html
-<!-- mcp-name: io.github.AhmedLaminou/windows-mcp-server -->
+<!-- mcp-name: io.github.ahmedlaminou/windows-mcp-server -->
 ```
 
 Before publishing, change `ahmed` if the final GitHub username differs.

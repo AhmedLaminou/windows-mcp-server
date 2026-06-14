@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.AhmedLaminou/windows-mcp-server",
+  "name": "io.github.ahmedlaminou/windows-mcp-server",
   "title": "Windows Management",
   "description": "Local Windows management, diagnostics, security, cleanup, and optimization MCP server.",
   "version": "0.3.0",

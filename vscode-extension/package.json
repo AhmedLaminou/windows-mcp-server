@@ -3,7 +3,7 @@
   "displayName": "Windows Management MCP",
   "description": "VS Code extension wrapping the 96-tool Windows Management MCP server.",
   "version": "0.3.0",
-  "publisher": "ahmed",
+  "publisher": "ahmedlaminou",
   "type": "module",
   "engines": {
     "vscode": "^1.90.0"

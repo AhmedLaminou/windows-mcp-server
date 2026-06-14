@@ -5,7 +5,7 @@ This project is ready for GitHub and close to ready for the MCP Registry. The re
 The current docs assume:
 
 ```text
-io.github.AhmedLaminou/windows-mcp-server
+io.github.ahmedlaminou/windows-mcp-server
 https://github.com/AhmedLaminou/windows-mcp-server
 ```
 
@@ -65,7 +65,7 @@ twine upload dist/*
 PyPI ownership verification for the MCP Registry depends on the README containing this marker:
 
 ```html
-<!-- mcp-name: io.github.AhmedLaminou/windows-mcp-server -->
+<!-- mcp-name: io.github.ahmedlaminou/windows-mcp-server -->
 ```
 
 The marker must match `server.json` exactly.
@@ -104,7 +104,7 @@ mcp-publisher publish
 Verify through the Registry API:
 
 ```powershell
-Invoke-WebRequest "https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.AhmedLaminou/windows-mcp-server"
+Invoke-WebRequest "https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.ahmedlaminou/windows-mcp-server"
 ```
 
 ## Troubleshooting

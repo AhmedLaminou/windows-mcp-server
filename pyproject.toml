@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "windows-mcp-server"
+name = "windows-management-mcp-server"
 version = "0.3.0"
 description = "Advanced Windows management, diagnostics, security, and optimization MCP server"
 readme = "README.md"
@@ -37,3 +37,6 @@ Issues = "https://github.com/AhmedLaminou/windows-mcp-server/issues"
 
 [project.scripts]
 windows-mcp-server = "windows_mcp_server.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["windows_mcp_server"]

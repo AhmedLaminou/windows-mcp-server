@@ -31,6 +31,12 @@ For the complete tool catalog, see [docs/TOOLS.md](docs/TOOLS.md).
 
 ## Installation
 
+From PyPI:
+
+```powershell
+pip install windows-management-mcp-server
+```
+
 Create a virtual environment and install the package in editable mode:
 
 ```powershell
@@ -39,7 +45,7 @@ python -m venv venv
 pip install -e .
 ```
 
-This registers the `windows-mcp-server` command in the active environment.
+Both install paths register the `windows-mcp-server` command in the active environment.
 
 ## MCP Client Configuration
 

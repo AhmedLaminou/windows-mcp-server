@@ -13,7 +13,7 @@
     {
       "registryType": "pypi",
       "registryBaseUrl": "https://pypi.org",
-      "identifier": "windows-mcp-server",
+      "identifier": "windows-management-mcp-server",
       "version": "0.3.0",
       "transport": {
         "type": "stdio"

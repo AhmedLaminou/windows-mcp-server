@@ -55,6 +55,8 @@ npm run compile
 
 The MCP Registry hosts metadata, not the package artifact. For a PyPI-distributed server, publish the Python package to PyPI first.
 
+This project publishes to PyPI as `windows-management-mcp-server`. The shorter `windows-mcp-server` name is already used by another PyPI project, so do not upload under that distribution name.
+
 ```powershell
 pip install build twine
 python -m build
@@ -111,4 +113,4 @@ Invoke-WebRequest "https://registry.modelcontextprotocol.io/v0.1/servers?search=
 
 - If registry validation says package verification failed, confirm the PyPI-rendered README contains the exact `mcp-name:` marker.
 - If publishing says you do not have permission, confirm the `io.github.<username>/...` namespace matches the GitHub account used by `mcp-publisher login github`.
-- If the package URL is wrong, confirm `server.json` uses `registryType: "pypi"` and `identifier: "windows-mcp-server"`.
+- If the package URL is wrong, confirm `server.json` uses `registryType: "pypi"` and `identifier: "windows-management-mcp-server"`.

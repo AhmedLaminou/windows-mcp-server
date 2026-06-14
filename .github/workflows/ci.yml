@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  python:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install package
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .
+      - name: Compile Python
+        run: python -m compileall windows_mcp_server
+      - name: Count registered tools
+        run: python -c "from windows_mcp_server.registry import register_all_tools, registered_tools; Dummy=type('Dummy',(),{'tool':lambda self: (lambda f:f)}); register_all_tools(Dummy()); assert len(registered_tools) == 96, len(registered_tools)"
+
+  vscode-extension:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: vscode-extension/package-lock.json
+      - name: Install dependencies
+        working-directory: vscode-extension
+        run: npm ci
+      - name: Compile extension
+        working-directory: vscode-extension
+        run: npm run compile

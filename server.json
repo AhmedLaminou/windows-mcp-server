@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.AhmedLaminou/windows-mcp-server",
+  "title": "Windows Management",
+  "description": "Local Windows management, diagnostics, security, cleanup, and optimization MCP server.",
+  "version": "0.3.0",
+  "websiteUrl": "https://github.com/AhmedLaminou/windows-mcp-server",
+  "repository": {
+    "url": "https://github.com/AhmedLaminou/windows-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "windows-mcp-server",
+      "version": "0.3.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

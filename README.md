@@ -8,6 +8,12 @@ It exposes **96 tools** over stdio and is designed for local assistants such as 
 
 > Important: This server runs with the privileges of the user account that starts it. Several tools can change system state, delete files, edit the Registry, manage services, install updates, or execute PowerShell. Use the read-only and dry-run tools first, and only enable destructive actions after reviewing the target paths and commands.
 
+## Demo
+
+[![Windows Management MCP Server demo](https://img.youtube.com/vi/1GNk_GYYkww/hqdefault.jpg)](https://youtu.be/1GNk_GYYkww)
+
+Watch the demo: <https://youtu.be/1GNk_GYYkww>
+
 ## What It Can Do
 
 - Task manager: CPU, GPU, memory, disk usage, top processes, process trees, process details, suspend/resume/kill.

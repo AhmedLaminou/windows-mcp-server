@@ -267,6 +267,33 @@ code {
   max-width: 850px;
 }
 
+.section-head p {
+  color: var(--muted);
+}
+
+.demo-section {
+  padding-top: 36px;
+}
+
+.video-frame {
+  aspect-ratio: 16 / 9;
+  background: #172033;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.video-frame iframe {
+  border: 0;
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  width: 100%;
+}
+
 .tool-grid {
   display: grid;
   gap: 16px;

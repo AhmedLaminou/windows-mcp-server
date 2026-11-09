@@ -11,7 +11,8 @@ def windows_mcp_tool():
 
 def register_all_tools(mcp):
     """
-    Imports all tool modules and registers them with the FastMCP instance.
+    Imports all tool modules and registers them with the server instance
+    (``MCPServer`` on mcp 2.x, ``FastMCP`` on mcp 1.x).
     """
     import windows_mcp_server.tools.execute_powershell
     import windows_mcp_server.tools.manage_registry

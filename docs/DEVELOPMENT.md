@@ -26,6 +26,28 @@ python -m windows_mcp_server.server
 .\venv\Scripts\python.exe -m compileall windows_mcp_server
 ```
 
+## Run the Tests
+
+```powershell
+pip install pytest
+python -m pytest -q tests
+```
+
+The tests also run on Linux/macOS (`tests/conftest.py` stubs `winreg` and
+`ctypes.windll`); no tool is executed, they only check imports and registration.
+
+## Supported MCP SDK Versions
+
+The server supports `mcp>=1.12,<3`:
+
+| `mcp` | Server class | Import used |
+|---|---|---|
+| 2.x | `MCPServer` | `mcp.server.mcpserver` |
+| 1.x | `FastMCP` | `mcp.server.fastmcp` |
+
+`windows_mcp_server/server.py` picks the right one automatically. Do not import
+either class anywhere else: keep the SDK-specific code in that one file.
+
 ## Verify Registered Tools
 
 ```powershell

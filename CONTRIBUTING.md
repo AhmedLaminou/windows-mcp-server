@@ -16,6 +16,8 @@ python -m venv venv
 .\venv\Scripts\Activate.ps1
 pip install -e .
 .\venv\Scripts\python.exe -m compileall windows_mcp_server
+pip install pytest
+.\venv\Scripts\python.exe -m pytest -q tests
 ```
 
 For the VS Code extension:
